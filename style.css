@@ -1,6 +1,6 @@
 body
 {
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
 }
@@ -21,6 +21,7 @@ video
 .navbar h1
 {
     justify-self: center;
+    font-size:xx-large;
 }
 
 .navbar ul
@@ -38,6 +39,7 @@ video
 .navbar li
 {
     padding: 3% 3%;
+    font-size: large;
 }
 
 .navbar a
@@ -46,9 +48,24 @@ video
     text-decoration: none;
 }
 
+.banner
+{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    
+}
+.banner img
+{
+    max-height: 200px;
+}
+
 .info
 {
-    background-color: rgb(244, 215, 151);
-    margin: 10%;
-    padding: 1% 3%;
+    margin: 5% 15%;
+}
+
+.info p
+{
+    text-align: justify;
 }
