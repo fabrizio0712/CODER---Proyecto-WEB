@@ -3,25 +3,28 @@ body
     background-color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
+    padding-top: 100px;
 }
 
-video
+header
 {
     width: 100%;
-    aspect-ratio: 16/9;
 }
 
 .navbar
 {
-    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    width: 100%;
+    background-color: rgb(190, 237, 249);
     display: grid;
     grid-template-columns: 1fr 1fr;
+    top: 0;
 }
 
 .navbar h1
 {
     justify-self: center;
-    font-size:xx-large;
+    margin: 0.5rem;
 }
 
 .navbar ul
@@ -31,7 +34,7 @@ video
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: flex-start;
+    justify-content: center;
     margin-block: 0;
     padding-inline: 0;
 }
@@ -39,7 +42,6 @@ video
 .navbar li
 {
     padding: 3% 3%;
-    font-size: large;
 }
 
 .navbar a
@@ -58,14 +60,23 @@ video
 .banner img
 {
     max-height: 200px;
+    min-height: 50px;
 }
 
 .info
 {
-    margin: 5% 15%;
+    margin: 50px 15%;
 }
 
 .info p
 {
     text-align: justify;
+}
+
+.video
+{
+    width: 75%;
+    aspect-ratio: 16/9;
+    justify-self: center;
+    margin: 3%;
 }
