@@ -109,11 +109,22 @@ footer
         border-radius: 15px;
         align-content: center;
         background-color: $color_Primary;
+        transition: background-color 0.5s ease, background-image 0.5s ease;
         h4
         {
             color: $color_Secondary;
             justify-self: center;
-            transition: all 0.5 ease;
+            transition: color 0.5s ease;
+        }
+    }
+    .anim-box:hover
+    {
+        /* queria cambiar el fondo por una imagen la cual quiero definir en el html mediante href, pero no funciona como esperaba
+        background-image: url(href);*/
+        background-size: cover;
+        h4
+        {
+            color: $color_Transparent
         }
     }
 }
