@@ -1,0 +1,119 @@
+@import 'variables';
+body
+{
+    background-color: $color_Background;
+    padding-top: 10%;
+    margin: 0;
+}
+
+header
+{
+    width: 100%;
+    .navbar
+    {
+        position: fixed;
+        width: 100%;
+        height: fit-content;
+        background-color: $color_Primary;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        top: 0;
+        h1
+        {
+            align-self: center;
+            justify-self: center;
+            margin-left: 15%;
+            color: $color_Secondary;
+        }
+        ul
+        {
+            display: flex;
+            list-style: none;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            margin-block: 0;
+            padding-inline: 0;
+        }
+        li
+        {
+            padding: 3% 3%;
+        }
+        a
+        {
+            color: $color_Secondary;
+            text-decoration: none;
+        }
+    }
+}
+.banner
+{
+    display: flex;
+    background-color: $color_Background;
+    justify-content: center;
+    img
+    {
+        max-height: 200px;
+        min-height: 50px;
+    }
+}
+.info
+{
+    margin: 2.5% 7.5%;
+    padding: 2.5% 7.5%;
+    background-color: $color_Terciary;
+    border-radius: 1.5rem;
+    h2
+    {
+        color:$color_Secondary;
+    }
+    p
+    {
+        color: $color_Text;
+        text-align: justify;
+    }
+    li
+    {
+        color:$color_Text;
+    }
+}
+.video
+{
+    width: 75%;
+    aspect-ratio: 16/9;
+    justify-self: center;
+    margin: 3%;
+}
+footer
+{
+    margin: 2.5% 7.5%;
+    padding: 2.5% 7.5%;
+    border-radius: 1.5rem;
+    background-color: $color_Terciary;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    h3
+    {
+        width: 100%;
+        text-align: center;
+        color: $color_Secondary;
+    }
+    .anim-box
+    {
+        margin: 1.5%;
+        width: 150px;
+        height: 150px;
+        border-radius: 15px;
+        align-content: center;
+        background-color: $color_Primary;
+        h4
+        {
+            color: $color_Secondary;
+            justify-self: center;
+            transition: all 0.5 ease;
+        }
+    }
+}
